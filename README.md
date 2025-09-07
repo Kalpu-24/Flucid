@@ -24,6 +24,19 @@ Flucid is a structured Todo and planning app featuring Phosphor Icons, with dual
   - Sections, boards, and lists for organized workflows
   - Filters, saved views, and search
   - Keyboard shortcuts and accessible navigation
+- **Categories & Subcategories**:
+  - Custom, user-defined categories with optional subcategories (hierarchical)
+  - Not required: if unspecified, tasks/entries default to "Misc"
+  - Create/rename/merge/delete categories and subcategories
+  - Duplicate handling and redundancy cleanup (suggest merge on similar names)
+  - Quick assignment in task editor and journal entry composer
+  - Example: Category "Wasted time" → Subcategory "YouTube" (or "YT")
+- **Journaling**:
+  - Daily notes with rich text (headings, checklists, code blocks)
+  - Templates (daily review, weekly recap, project postmortem)
+  - Link journal entries to tasks, projects, and timelines
+  - Mood/energy tracking and highlights; media attachments (images)
+  - Backlinks and full-text search across entries
 - **Modes**:
   - Simple Mode: minimal UI, essentials-only (tasks, due date, priority, quick planner)
   - Complex Mode: full feature set (subtasks, dependencies, timelines, advanced filters)
@@ -31,6 +44,10 @@ Flucid is a structured Todo and planning app featuring Phosphor Icons, with dual
 - **Data & Sync**:
   - Local persistence initially; cloud sync roadmap
   - Import/export (JSON/CSV) roadmap
+- **Calendar Integration (Roadmap)**:
+  - Optional Google Calendar integration via OAuth
+  - One-way and two-way sync (tasks with due dates <-> events)
+  - Time-blocking export and reminders alignment
 - **Cross-Platform**: Flutter app targeting iOS, Android, Web, Windows, macOS, and Linux
 
 ## Gemini AI Integration (User-Provided API Key)
@@ -61,15 +78,21 @@ Flucid is a structured Todo and planning app featuring Phosphor Icons, with dual
   - Daily/weekly planner view with drag-and-drop
   - Phosphor Icons integration
   - Local storage
+  - Basic journaling (daily notes, link to tasks)
+  - Categories with default fallback to "Misc"
 - **v1 (Complex Mode Foundations)**:
   - Subtasks, tags/labels, filters, search
   - Recurring tasks and reminders
   - Timeline view for projects
   - Keyboard shortcuts and accessibility pass
+  - Enhanced journaling (templates, search, media attachments)
+  - Subcategories, merge/rename tools, and redundancy cleanup
 - **v1.x Enhancements**:
   - Dependencies, milestones, progress tracking
   - Saved views and custom boards
   - Import/export and optional cloud sync
+  - Google Calendar integration (OAuth, 1/2-way sync)
+  - AI-assisted category suggestions from entry text
 
 ## Design Principles
 - **Clarity first**: information-dense but legible; icons aid scanning
